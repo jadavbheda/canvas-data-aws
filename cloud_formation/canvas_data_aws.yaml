@@ -33,11 +33,7 @@ Resources:
   S3Bucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Join
-        - "-"
-        - - "canvas-data-warehouse"
-          - !Ref AWS::AccountId
-          - !Ref EnvironmentParameter
+      BucketName: "canvas-data-warehouse"
       PublicAccessBlockConfiguration:
         BlockPublicAcls: True
         BlockPublicPolicy: True
